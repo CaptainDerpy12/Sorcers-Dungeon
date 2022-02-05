@@ -51,7 +51,7 @@ class Player(object):
         self.hit_box = pygame.Rect(self.x - 8, self.y - 8, 16, 16)
         self.animate_sword = False
         self.sword_counter = 0
-        self.sword_sound = pygame.mixer.Sound('Data/SFX/sword-sound-2.wav')
+        # self.sword_sound = pygame.mixer.Sound('Data/SFX/sword-sound-2.wav')
         self.sword_sound_timer = pygame.time.get_ticks()
         self.selection = 0
         self.arrows = []
@@ -288,7 +288,7 @@ class ArcherTower(object):
         self.bow_image = pygame.image.load('Data/Images/Archer_Tower/bow.png').convert_alpha()
         self.arrow_image = pygame.image.load('Data/Images/Archer_Tower/arrow.png').convert_alpha()
         self.archer_counter = 0
-        self.arrow_sound = pygame.mixer.Sound('Data/SFX/regular-arrow-shot.wav')
+        # self.arrow_sound = pygame.mixer.Sound('Data/SFX/regular-arrow-shot.wav')
 
     def create_tower(self, x, y, towers, archers):
         self.archer_counter += 1
@@ -432,8 +432,8 @@ class WitchHut(object):
 class Sorcer(object):
     def __init__(self):
         self.sorcer_image, self.rect = load_image('Sorcer/sorcer_idle.png')
-        self.sound = pygame.mixer.Sound('Data/SFX/spell-shoot.wav')
-        self.sound.set_volume(0.15)
+        # self.sound = pygame.mixer.Sound('Data/SFX/spell-shoot.wav')
+        # self.sound.set_volume(0.15)
 
     def add_sorcer(self, x, y, sorcers):
         sorcers.append([x, y, 32, 32, 1, random.randint(1, 14), pygame.time.get_ticks()])

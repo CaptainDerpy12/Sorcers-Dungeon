@@ -2,7 +2,6 @@ import pygame, pygame.mixer
 import csv, sys, random, math
 import Data.engine
 import Data.text
-import Data.pathfind
 import Data.levelRenderer as levelRenderer
 
 pygame.init()
@@ -56,17 +55,17 @@ spawner = Data.engine.Spawner()
 archer_tower = Data.engine.ArcherTower()
 witch_hut = Data.engine.WitchHut()
 particle_system = Data.engine.Particles()
-pathfinder = Data.pathfind.Pathfinder()
+# pathfinder = Data.pathfind.Pathfinder()
 
 
 large_text = Data.text.Font('Data/Images/text/large_font.png')
 small_text = Data.text.Font('Data/Images/text/small_font.png')
 
-glass_break_sound = pygame.mixer.Sound('Data/SFX/bm-glass-break.wav')
-arrow_shot_sound = pygame.mixer.Sound('Data/SFX/regular-arrow-shot.wav')
+# glass_break_sound = pygame.mixer.Sound('Data/SFX/SoundTrack/bm-glass-break.wav')
+# arrow_shot_sound = pygame.mixer.Sound('Data/SFX/SoundTrack/regular-arrow-shot.wav')
 
 # 277000
-adventure_track = pygame.mixer.Sound('Data/SFX/SoundTrack/Adventure-320bit.mp3')
+adventure_track = pygame.mixer.Sound('Data/SFX/SoundTrack/dd.mp3')
 adventure_track.set_volume(0.75)
 adventure_track.play(-1)
 
